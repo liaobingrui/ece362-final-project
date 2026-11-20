@@ -3,7 +3,8 @@
 #include "lcd.h"
 #include <stdio.h>
 #include <string.h>
-#include <math.h>   
+#include <math.h>  
+#include "audio.h" 
 
 /****************************************** */
 #define PIN_SDI    11
@@ -64,6 +65,8 @@ int main() {
         {2, 180, YELLOW},
         {3, 230, BLUE}
     };
+
+    init_pwm_song();
 
     while (1) 
     {
